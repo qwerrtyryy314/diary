@@ -13,6 +13,8 @@ MainWindow::MainWindow(QWidget *parent) :
     setCentralWidget(browser);
     createActions();
     createMenus();
+
+    browser->addConnection();
 }
 
 void MainWindow::createActions()

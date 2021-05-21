@@ -51,7 +51,7 @@ macx {
     message(Mac path $$BUILD_TREE_PATH)
 }
 
-message(git@95.215.44.40)
+#message(git@95.215.44.40)
 ##src.pro
 QT += printsupport xml
 

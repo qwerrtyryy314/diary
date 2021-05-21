@@ -50,6 +50,8 @@ Browser::Browser(QWidget *parent) :
     {
         //emit connected(true); //TODO: signal here?
         isConnected=true;
+        //just to test
+        initTree();
     }
     else
         QMessageBox::warning(this, tr("Unable to open database"), tr("An error occurred while "

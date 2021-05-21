@@ -109,6 +109,10 @@ SqlConnectionDialog::SqlConnectionDialog(QWidget *parent)
     connect(okButton,SIGNAL(clicked()),this,SLOT(okButton_clicked()));
     connect(cancelButton,SIGNAL(clicked()),this,SLOT(cancelButton_clicked()));
     connect(dbCheckBox,SIGNAL(clicked()),this,SLOT(dbCheckBox_clicked()));
+//just quick start
+    dbCheckBox->setChecked(true);
+    dbCheckBox_clicked();
+    okButton_clicked();
 }
 
 SqlConnectionDialog::~SqlConnectionDialog()
